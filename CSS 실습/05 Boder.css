@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테두리</title>
+    
+    <style>
+        p {
+            padding : 20px;
+        }
+
+        #p1 {border : 1px solid black;}
+        #p2 {border-bottom : 1px solid red;}
+        #p3 {
+            border : 1px solid gray;
+            border-radius: 10px;
+        }
+        #p4 {
+            background-color: aquamarine;
+            border-left: 5px solid blue;
+        }
+        #p5 {
+            border-style: solid dotted dashed double;
+        }
+        #p6 {
+            border-top: 1px solid black;
+            border-left: 5px solid red;
+            border-bottom: 1px solid violet;
+            border-right: 1px solid black;
+        }
+        #p7 {
+            border : medium solid red;
+            border-radius: 10px 20px 30px 40px;
+        }
+        div {
+            border : 1px solid black;
+            width : 200px;
+            height : 200px;
+            overflow : hidden;
+        }
+    </style>
+</head>
+<body>
+    <p id = "p1">나는 사랑에 테두리가 있습니다.</p>
+    <p id = "p2">아래쪽에 빨간색 테두리가 있습니다.</p>
+    <p id = "p3">테두리를 둥글게 처리 했습니다.</p>
+    <p id = "p4">파란색 왼쪽 테두리가 있습니다.</p>
+    <p id = "p5">혼합된 테두리.</p>
+    <p id = "p6">상하방향에 실선 넣기.</p>
+    <p id = "p7">테두리 반지름 각각 설정.</p>
+    <div><img src = "./img/scream.jpg" style = "width : 200px;"></div>
+</body>
+</html>
