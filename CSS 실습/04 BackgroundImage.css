@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 그림</title>
+
+    <style>
+        body {
+            background : url("./img/cat.png") no-repeat right top;
+            /* background-color: azure;
+            background-image: url("./img/cat.png");
+            background-repeat: no-repeat;
+            background-position: right top; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>이 페이지는 배경으로 이미지가 있습니다.</p>
+</body>
+</html>
