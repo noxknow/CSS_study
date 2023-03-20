@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패딩</title>
+
+    <style>
+        #div1 {
+            border : 1px solid black;
+            background-color: lightblue;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+        }
+        div.dClass {
+            width : 300px;
+            background-color: yellow;
+            margin : 20px;
+        }
+        #div3 {
+            box-sizing : border-box;
+            padding : 25px;
+        }
+    </style>
+</head>
+<body>
+    <h2>개별 padding 속성 사용</h2>
+    <div id = "div1">
+        이 div요소에는 50px의 상단 패딩, 30px의 오른쪽 패딩, 50px의 하단 패딩
+        및 80px의 왼쪽 패딩이 있습니다.
+    </div>
+
+    <div class = "dClass" id = "div2">이 div의 너비는 300px 입니다.</div>
+    <div class = "dClass" id = "div3">
+        이 div의 너비는 box-sizing : border-box 속성 때문에 왼쪽 및 오른쪽 패딩이
+        총 50px에도 불구하고 300으로 유지 됩니다.
+    </div>
+</body>
+</html>
