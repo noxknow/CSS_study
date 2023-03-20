@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+
+    <style>
+        h2 {
+            width : 500px;
+            border : 1px solid red;
+            text-align: center;
+            margin : auto;
+        }
+        div {
+            border : 1px solid black;
+            background-color: lightblue;
+            margin-top: 100px;
+            margin-right: 150px;
+            margin-bottom: 100px;
+            margin-left: 80px;
+        }
+        p {
+            margin : 50px;
+            border : 1px dotted red;
+            width : 200px;
+            height : 200px;
+            overflow : hidden;
+            float : left;
+        }
+    </style>
+</head>
+<body>
+    <h2>개별 여백 속성 사용</h2>
+    <div>이 div요소의 위쪽 여백은 100px, 오른쪽 여백은 150px, 아래쪽 여백은 100px,
+        왼쪽 여백은 80px 입니다.
+    </div>
+
+    <p>감사원은 세입·세출의 결산을 매년 검사하여 대통령과 차년도국회에 그 결과를 보고하여야 한다.</p>
+
+    <p>이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다.</p>
+
+    <p>제안된 헌법개정안은 대통령이 20일 이상의 기간 이를 공고하여야 한다.</p>
+
+
+</body>
+</html>
