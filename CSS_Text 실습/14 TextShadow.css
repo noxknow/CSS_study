@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text shadow</title>
+
+    <style>
+        h1.ex {
+          text-shadow: 2px 2px red;
+        }
+        h1.ex1 {
+            text-shadow: 2px 2px 5px red;
+        }
+        h1.ex2 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        h1.ex3 {
+            text-shadow: 0 0 3px #ff0000;
+        }
+        h1.ex4 {
+            text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <h1 class = "ex">Text-shadow effect!</h1>
+    <h1 class = "ex1">Text-shadow blur effect!</h1>
+    <h1 class = "ex2">Text-shadow effect!</h1>
+    <h1 class = "ex3">Text-shadow effect!</h1>
+    <h1 class = "ex4">Text-shadow effect!</h1>
+</body>
+</html>
