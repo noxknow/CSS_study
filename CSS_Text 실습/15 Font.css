@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴</title>
+
+    <style>
+        p.italic {font-style : italic;}
+        p.oblique {font-style : oblique;}
+        .small {
+            font-variant: small-caps;
+        }
+        .em0875 {font-size: 2.5em;}  /* 40px/16=2.5em */
+
+        @font-face {
+            font-family: 'Ansungtangmyun-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ansungtangmyun-Bold.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .ansung {
+            font-family: Ansungtangmyun-Bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>font-style 속성</h1>
+    <p>이것은 일반 글꼴입니다.</p>
+    <p class = "italic">이것은 italic 스타일 입니다.</p>
+    <p class = "oblique">이것은 oblique 스타일 입니다.</p>
+
+    <hr>
+    <h1>font-variant 속성</h1>
+    <p>Hyper Text MarkUp</p>
+    <p class = "small">Hyper Text Markup Language</p>
+
+    <hr>
+    <h1>This is heading2</h1>
+    <p class = "em0875">This is paragraph</p>
+
+    <hr>
+    <h1 style="font-size:3vw;">Responsive Text</h1>
+    <p style="font-size:2vw;">Resize the browser window to see how the 
+        text size scales.</p>
+    <p style="font-size:2vw;">Use the "vw" unit when sizing the text.
+         10vw will set the size to 10% of the viewport width.</p>
+    
+    <hr>
+    <h1>외부 글꼴 사용하기</h1>
+    <h2 class = "ansung">안성탕면체</h2>
+</body>
+</html>
