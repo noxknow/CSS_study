@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {text-align : center;}
+        h2 {text-align : left;}
+        h3 {text-align : right;}
+
+        div {
+            border : 1px solid black;
+            padding : 10px;
+            width : 200px;
+            height : 200px;
+            text-align: justify;
+        }
+
+        p.a {text-align-last: right;}
+        p.b {text-align-last: center;}
+        p.c {text-align-last: justify;}
+
+        p.ex1 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        img.a {vertical-align: baseline;}
+        img.b {vertical-align: text-top;}
+        img.c {vertical-align: text-bottom;}
+        img.d {vertical-align: sub;}
+        img.e {vertical-align: super;}
+    </style>
+</head>
+<body>
+    <h1>Heading 1 (center)</h1>
+    <h2>Heading 2 (left)</h2>
+    <h3>Heading 3 (right)</h3>
+
+    <p>위 세 머리글은 가운데, 왼쪽 및 오른쪽으로 정렬 됩니다.</p>
+
+    <hr>
+    <h1>text-align : justify 예제 </h1>
+    <p>text-align : justify 는 각 줄이 동일한 너비를 갖도록 줄을 늘립니다. 
+        (예 : 신문 및 잡지)
+    </p>
+    <div>
+        이상을 이상 인생에 이상이 주며, 보라. 그러므로 소금이라 동력은 든 장식하는 찾아 이것이야말로 약동하다. 얼마나 길지 기쁘며, 이상 불어 부패뿐이다. 풀이 바이며, 청춘 황금시대의 거친 길지 속잎나고, 청춘이 운다. 거친 목숨을 위하여 봄바람이다.
+    </div>
+
+    <hr>
+    <h1>text-align-last 속성</h1>
+    <h2>text-align-last : right</h2>
+    <p class = "a">
+        할지니, 얼음 무엇을 많이 청춘의 봄날의 커다란 뿐이다. 창공에 피어나기 청춘은 같이, 듣기만 철환하였는가? 낙원을 되는 열매를 것이다.보라, 굳세게 구하기 천하를 보이는 이것이다. 그와 인류의 불러 남는 있음으로써 듣는다. 대중을 대한 가진 황금시대의 이상의 풍부하게 할지라도 것이다.
+    </p>
+    <h2>text-align-last : center</h2>
+    <p class = "b">
+        커다란 고행을 얼음이 모래뿐일 철환하였는가? 동산에는 같이, 그림자는 구하기 있다. 목숨이 그와 청춘이 석가는 풍부하게 못하다 구하지 노년에게서 칼이다. 청춘의 역사를 수 이상은 같으며, 있다. 이상 불어 이상은 아니다.
+    </p>
+    <h2>text-align-last : justify</h2>
+    <p class = "c">
+        심장의 공자는 어디 피가 살 싹이 교향악이다. 못할 얼마나 바이며, 없는 따뜻한 웅대한 이상의 인생의 거친 것이다. 이상은 보이는 청춘은 대한 찾아다녀도, 아름다우냐? 같이 시들어 같으며, 있으며, 것이다. 인간의 같으며, 뭇 황금시대다. 군영과 두손을 작고 그림자는 것이다. 힘차게 불어 두손을 눈이 오아이스도 때까지 이것을 역사를 철환하였는가?
+    </p>
+
+    <hr>
+    <p>이것이 기본 텍스트 방향 입니다.</p>
+    <p class = "ex1">이것은 오른쪽에서 왼쪽 테스트 방향입니다.</p>
+
+    <hr>
+    <h1>vertical-align 속성</h1>
+    <h2>vertical-align : baseline (default)</h2>
+    <p>An <img class = "a" src = "./img/workplace.jpg">images with a default alignment
+    </p>
+    
+    <h2>vertical-align : text-top</h2>
+    <p>An <img class = "b" src = "./img/workplace.jpg">images with a text-top alignment
+    </p>
+    
+    <h2>vertical-align : text-bottom</h2>
+    <p>An <img class = "c" src = "./img/workplace.jpg">images with a text-bottom alignment
+    </p>
+    
+    <h2>vertical-align : sub (아래 첨자 위치)</h2>
+    <p>An <img class = "d" src = "./img/workplace.jpg">images with a sub alignment
+    </p>
+    
+    <h2>vertical-align : super (위 첨자 위치)</h2>
+    <p>An <img class = "e" src = "./img/workplace.jpg">images with a super alignment
+    </p>
+</body>
+</html>
