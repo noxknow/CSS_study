@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자 간격</title>
+
+    <style>
+        p.indent {
+            text-indent: 50px;
+        }
+
+        h2 {letter-spacing: 10px;}
+        h3 {letter-spacing: -5px;}
+
+        p.small {line-height: 0.8;}
+        p.big {line-height: 1.8;}
+
+        p.one {
+            word-spacing: 10px;
+          }
+          
+          p.two {
+            word-spacing: -5px;
+          }
+    </style>
+</head>
+<body>
+    <h1>text-indent 사용 (들여쓰기)</h1>
+    <p class = "indent">방지하는 위하여 따뜻한 남는 이 철환하였는가? 인생에 무엇이 풀밭에 칼이다. 인간의 목숨을 우리는 것은 그들의 것이다. 길지 가슴이 피가 반짝이는 교향악이다. 뛰노는 싸인 품고 칼이다. 때까지 밝은 능히 아니한 보내는 인생에 있을 인생을 붙잡아 있는가? 이성은 남는 사람은 수 무엇을 붙잡아 방황하였으며, 찾아 과실이 사막이다.</p>
+
+    <hr>
+    <h1>letter spacing 사용</h1>
+    <h2>목마와 숙녀</h2>
+    <h3>연진아 축하한다.</h3>
+
+    <hr>
+    <h1>line-height 사용 (줄 간격)</h1>
+    <p class = "small">않는 불어 길지 찾아다녀도, 싹이 무엇을 힘있다. 내려온 그들의 부패를 간에 쓸쓸하랴? 황금시대를 천하를 같으며, 않는 불어 길지 찾아다녀도, 싹이 무엇을 힘있다. 내려온 그들의 부패를 간에 쓸쓸하랴? 황금시대를 천하를 같으며
+    </p>
+    <p class = "big">
+    내려온 같지 거친 있으랴? 내는 옷을 하여도 실현에 그리하였는가? 풀이 시들어 밥을 크고 인생을 청춘의 그것은 끓는다. 온 같지 거친 있으랴? 내는 옷을 하여도 실현에 그리하였는가? 풀이 시들어 밥을 크고 인생을 청춘의 그것은 끓는다
+    </p>
+
+    <h1>Using word-spacing</h1>
+    <p>This is a paragraph with normal word spacing.</p>
+    <p class="one">This is a paragraph with larger word spacing.</p>
+    <p class="two">This is a paragraph with smaller word spacing.</p>
+</body>
+</html>
