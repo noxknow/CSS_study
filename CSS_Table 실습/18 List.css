@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트 스타일</title>
+
+    <style>
+        .i {
+            list-style-image: url('./img/sqpurple.gif');
+        }
+        .a {
+            list-style-position: inside;
+        }
+        .b {
+            list-style-position: outside;
+        }
+        .demo {
+            list-style-type: none;
+            padding : 0;
+            margin : 0;
+        }
+        li {
+            border-left : 3px dashed green;
+        }
+        ol.red {
+            background-color: #ff9999;
+            padding : 20px;
+        }
+        ol.red li {
+            background-color: #ffeeee;
+            color: darkred;
+            margin-left: 35px;
+            padding : 5px;
+        }
+        ul.blue {
+            background-color: #3399ff; 
+            padding : 20px;
+        }
+        ul.blue li {
+            background-color: #cceeff;
+            color : darkblue;
+            margin : 5px 5px 5px 35px;
+        }
+    </style>
+</head>
+<body>
+    <ul class = "i">
+        <li>커피</li>
+        <li>차</li>
+        <li>코카콜라</li>
+    </ul>
+
+    <hr>
+    <h1>list-style-position 속성</h1>
+    <h2>list-style-position : outside (default)</h2>
+
+    <ul class = "a">
+        <li>국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.</li>
+        <li>대통령의 임기는 5년으로 하며, 중임할 수 없다. 언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다.</li>
+    </ul>
+
+    <h2>list-style-position inside</h2>
+
+    <ul class = "b">
+        <li>대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다.</li>
+        <li>국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다.</li>  
+    </ul>
+
+    <hr>
+    <h1>기본 설정 제거</h1>
+    <p>일반적인 목록</p>
+    <ul>
+        <li>커피</li>
+        <li>차</li>
+        <li>코카콜라</li>
+    </ul>
+
+    <p>글머리 기호, 여백, 패딩 제거</p>
+    <ul class = "demo">
+        <li>커피</li>
+        <li>차</li>
+        <li>코카콜라</li>
+    </ul>
+
+    <hr>
+    <h1>색상으로 리스트 스타일 지정</h1>
+    <ol class = "red">
+        <li>커피</li>
+        <li>차</li>
+        <li>코카콜라</li>
+    </ol>
+
+    <ul class = "blue">
+        <li>커피</li>
+        <li>차</li>
+        <li>코카콜라</li>
+    </ul>
+</body>
+</html>
