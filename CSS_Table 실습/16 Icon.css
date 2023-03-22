@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘</title>
+
+    <!-- email과 다른 아이콘 링크 -->
+    <link rel="stylesheet" href=
+        "https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- user icon 링크 -->
+    <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- key icon 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {box-sizing: border-box;}
+        form {
+            max-width: 500px;
+            margin : auto;
+        }
+
+        .inputcontainer {
+            display : flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            padding : 10px;
+            background-color: dodgerblue;
+            color : white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .inputField {
+            width : 100%;
+            padding : 10px;
+            outline: none;
+        }
+        /* input의 클래스가 inputField이고, 그 블록을 클릭하면 border가 생긴다. */
+        .inputField:focus { 
+            border : 2px solid dodgerblue;
+        }
+
+        button {
+            background-color: dodgerblue;
+            color: white;
+            width: 100%;
+            padding : 15px 20px;
+            border : none;
+            cursor: pointer;
+            opacity : 0.8;
+        }
+        /* 등록 버튼에 커서가 있을 때 좀 더 선명해진다. */
+        button:hover {
+            opacity : 1;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Google icon library</h1>
+
+    <p>Some Google icons:</p>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+    <br><br>
+
+    <p>Styled Google icons (size and color):</p>
+    <i class="material-icons" style="font-size:24px;">cloud</i>
+    <i class="material-icons" style="font-size:36px;">cloud</i>
+    <i class="material-icons" style="font-size:48px;color:red;">cloud</i>
+    <i class="material-icons" style="font-size:60px;color:lightblue;">cloud</i>
+
+    <form action = "./handler.html">
+        <h2>등록 서식</h2>
+        <div class = "inputcontainer">
+            <i class = "fa fa-user icon"></i>
+            <input class = "inputField" type = "text" name = "userName" placeholder="이름">
+        </div>
+        <div class = "inputcontainer">
+            <i class="material-icons icon">email</i>
+            <input class = "inputField" type = "email" name = "userEmail" placeholder="주소">
+        </div>
+        <div class = "inputcontainer">
+            <i class="fa fa-key icon"></i>
+            <input class = "inputField" type = "password" name = "password" placeholder="암호">
+        </div>
+
+        <button type = "submit">등록</button>
+    </form>
+</body>
+</html>
