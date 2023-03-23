@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+            padding : 0;
+            margin : 0;
+            overflow : hidden;
+            background-color: #333333;
+        }
+        li {float : left;}
+        li a {
+            display : inline-block;
+            padding : 14px 16px;
+            text-decoration: none;
+            color : white;
+        }
+        li a:hover {
+            background-color: red;
+        }
+        .active {
+            background-color: red;
+        }
+        nav {
+            position : sticky;
+            top : 0;
+        }
+
+        * {box-sizing: border-box;}
+        div.clearfix::after {
+            content : "";
+            clear : left;
+            display : table;
+        }
+        div.box {
+            float : left;
+            width : 33.33%;
+            padding : 5px;
+            min-width : 200px;
+        }
+        div.box img {width : 100%;}
+
+        .flexBox {
+            width : 50%;
+            padding : 20px;
+            border : 1px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Float 예제</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href = "#" class = "active" onclick = "active(0)">Home</a></li>
+            <li><a href = "#" onclick = "active(1)">News</a></li>
+            <li><a href = "#" onclick = "active(2)">Contact</a></li>
+            <li><a href = "#" onclick = "active(3)">About</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function active(index) {
+            let a = document.getElementsByTagName("a");
+            for (let i=0; i<a.length; i++) {
+                a[i].classList.remove("active");
+            }
+            a[index].classList.add("active");
+        }
+    </script>
+
+    <hr>
+
+    <h2>박스 그리드</h2>
+    <p>가로로 박스를 float 하기</p>
+    <div class = "clearfix">
+        <div class = "box" style = "background : #bbb;">
+            <img src = "./img/img_5terre.jpg" alt = "이태리">
+        </div>
+        <div class = "box" style = "background : #ccc;">
+            <img src = "./img/img_forest.jpg" alt = "숲">
+        </div>
+        <div class = "box" style = "background : #ddd;">
+            <img src = "./img/img_lights.jpg" alt = "오로라">
+        </div>
+    </div>
+    <p style = "border : 1px solid red;">대통령은 제4항과 제5항의 규정에 의하여 확정된 법률을 지체없이 공포하여야 한다. 제5항에 의하여 법률이 확정된 후 또는 제4항에 의한 확정법률이 정부에 이송된 후 5일 이내에 대통령이 공포하지 아니할 때에는 국회의장이 이를 공포한다.</p>
+
+    <hr>
+    <h2>Flex box</h2>
+    <div class = "flexContainer">
+        <div class = "flexBox">
+            Box1 - 대통령은 제4항과 제5항의 규정에 의하여 확정된 법률을 지체없이 공포하여야 한다. 제5항에 의하여 법률이 확정된 후 또는 제4항에 의한 확정법률이 정부에 이송된 후 5일 이내에 대통령이 공포하지 아니할 때에는 국회의장이 이를 공포한다.
+        </div>
+        <div class = "flexBox">
+            Box2 - 대통령은 제4항과 제5항의 규정에 의하여 확정된 법률을 지체없이 공포하여야 한다. 제5항에 의하여 법률이 확정된 후 또는 제4항에 의한 확정법
+        </div>
+    </div>
+</body>
+</html>
