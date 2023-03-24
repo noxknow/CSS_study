@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사 클래스</title>
+
+    <style>
+        div {position: relative;}
+        .hover{
+            display : none;
+            background-color: yellow;
+            padding : 20px;
+            position: absolute;
+            top : 0px;
+            left : 30px;
+        }
+        div:hover p.hover {
+            display: block;
+        }
+
+        p:first-child {color : red;}
+        p i:first-child {text-decoration: underline;}
+        p:first-child i {font-weight: bold;}
+
+        p:lang(do) {
+            color : blue;
+            text-indent: 4ch;
+            font-size: large;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>의사 클래스</h1>
+    <h2>hover 툴팁</h2>
+    <div>
+        이 div요소 위로 마우스를 가져가면 p요소가 표시됩니다.
+        <p class = "hover">짜잔! 나 여기 있어요!</p>
+    </div>
+
+    <h2>:first-child</h2>
+    <p>This <i>is</i> a paragraph. This <i>is</i> a paragraph.</p>
+    <p>This <i>is</i> a paragraph. This <i>is</i> a paragraph.</p>
+    <div>
+        <p>This <i>is</i> a paragraph. This <i>is</i> a paragraph.</p>
+        <p>This <i>is</i> a paragraph. This <i>is</i> a paragraph.</p>
+    </div>
+
+    <hr>
+    <h2>:lang</h2>
+    <p>나는 대한민국 사람입니다.</p>
+    <p lang = "do">Ich bin Koreaner</p>
+    <p>나는 서울에서 살고 있습니다.</p>
+    <p lang = "do">Ich wohne in Seoul</p>
+</body>
+</html>
