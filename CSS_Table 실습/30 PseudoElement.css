@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1::after {content : url(./img/img_tree.png);}
+        h1::before {content : url(./img/img_tree.png);}
+        p::first-line {
+            color : red;
+        }
+        p.intro::first-letter {
+            color : blue;
+            font-size: xx-large;
+            float : left;
+        }
+        ::marker { /* 목록 항목의 색.*/
+            color : red;
+            font-size: 23px;
+        }
+        ::selection { /* 드래그 했을 때 색상이 바뀐다.*/
+            color : green;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seudo Element</h1>
+    <h2>:first-line</h2>
+    <p class = "intro">대법관은 대법원장의 제청으로 국회의 동의를 얻어 대통령이 임명한다. 국무총리는 국회의 동의를 얻어 대통령이 임명한다. 행정각부의 설치·조직과 직무범위는 법률로 정한다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.</p>
+    <p> 행정각부의 설치·조직과 직무범위는 법률로 정한다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다</p>
+
+    <hr>
+    <h2>::marker</h2>
+    <ul>
+        <li>커피</li>
+        <li>차</li>
+        <li>우유</li>
+    </ul>
+    <ol>
+        <li>커피</li>
+        <li>차</li>
+        <li>우유</li>
+    </ol>
+</body>
+</html>
