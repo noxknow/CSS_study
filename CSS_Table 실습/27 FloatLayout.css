@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+
+    <style>
+        * {box-sizing: border-box;}
+
+        header, footer {
+            background-color: gray;
+            color : white;
+            padding : 15px;
+        }
+
+        nav {
+            float : left;
+            width : 25%;
+            padding : 15px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding : 0;
+            margin : 0;
+        }
+
+        nav li {
+            background-color: #33bbee;
+            padding : 8px;
+            margin-bottom: 8px;
+            color : white;
+            cursor : pointer;
+        }
+        nav li:hover {background-color: #0099cc;}
+
+        section {
+            overflow : auto;
+        }
+
+        article {
+            float : right;
+            width : 75%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Korea</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>The Filght</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </nav>
+        <article>
+            <h1>City</h1>
+            <p>모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다.</p>
+
+            <p>이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.</p>
+        </article>
+    </section>
+    <footer>
+        <p>바닥글 내용</p>
+    </footer>
+</body>
+</html>
