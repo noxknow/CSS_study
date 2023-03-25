@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sprite</title>
+
+    <style>
+        .ulNav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .ulNav li {
+            float: left;
+            margin: 0 10px;
+        }
+        .ulNav a {
+            display: block;
+            width: 43px;
+            height: 44px;
+        }
+        #aHome {background: url("./img/img_navsprites_hover.gif") -1px 0;}
+        #aPrev {background: url("./img/img_navsprites_hover.gif") -47px 0;}
+        #aNext {background: url("./img/img_navsprites_hover.gif") -91px 0;}
+        
+        #aHome:hover {background: url("./img/img_navsprites_hover.gif") -1px -45px;}
+        #aPrev:hover {background: url("./img/img_navsprites_hover.gif") -47px -45px;}
+        #aNext:hover {background: url("./img/img_navsprites_hover.gif") -91px -45px;}
+    </style>
+</head>
+<body>
+    <h1>Image Sprite</h1>
+    <ul class = "ulNav">
+        <li><a id = "aHome" href = "#"></a></li>
+        <li><a id = "aPrev" href = "#"></a></li>
+        <li><a id = "aNext" href = "#"></a></li>
+    </ul>
+</body>
+</html>
