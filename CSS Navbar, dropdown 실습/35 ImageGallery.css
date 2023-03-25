@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <style>
+        section {
+            max-width: 1024px;
+            margin: auto;
+            overflow: auto;
+        }
+        .gallery {
+            float: left;
+            width: 22%;
+            margin : 5px;
+            border : 1px solid #cccccc;
+        }
+        .gallery:hover {
+            border : 1px solid red;
+        }
+        .thumbnail {
+            width : 100%;
+            height : auto;
+        }
+        .desc {
+            padding : 15px;
+            height : 32px;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        @media screen and (max-width : 767px) {
+            .responsive {
+                width : 49.99%;
+                margin : 6px 0;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class = "responsive">
+            <div class = "gallery">
+                <a href = "./img/img_5terre.jpg" target = "_blank">
+                    <img class = "thumbnail" src = "./img/img_5terre.jpg" 
+                        alt = "친퀘 테레" width="600" height="400">
+                </a>
+                <div class = "desc">아름다운 친퀘 테레</div>
+            </div>
+            
+            <div class = "gallery">
+                <a href = "./img/img_forest.jpg" target = "_blank">
+                    <img class = "thumbnail" src = "./img/img_forest.jpg" 
+                        alt = "숲" width="600" height="400">
+                </a>
+                <div class = "desc">아름다운 숲</div>
+            </div>
+            
+            <div class = "gallery">
+                <a href = "./img/img_lights.jpg" target = "_blank">
+                    <img class = "thumbnail" src = "./img/img_lights.jpg"
+                         alt = "빛" width="600" height="400">
+                </a>
+                <div class = "desc">아름다운 빛</div>
+            </div>
+            
+            <div class = "gallery">
+                <a href = "./img/img_mountains.jpg" target = "_blank">
+                    <img class = "thumbnail" src = "./img/img_mountains.jpg" 
+                        alt = "산" width="600" height="400">
+                </a>
+                <div class = "desc">아름다운 산</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
