@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+
+    <style>
+        /* article에서 width를 33%로 하고 padding을 주었기 때문에 크기가 맞지않는데 이 크기를 맞춰 준다. */
+        * {box-sizing: border-box;} 
+        body {
+            margin: 10;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+        }
+        header {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        nav a {
+            display: block;
+            float: left;
+            padding: 14px 16px;  
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: red;
+            color: white;
+        }
+        article,
+        aside {
+            padding: 15px;
+            background-color: white;
+            float: left;
+        }
+        article {
+            width: 50%;
+        }
+        .pic {
+            width: 75%;
+        }
+        aside {
+            width: 25%;
+        }
+        section {background-color: #f1f1f1;}
+        section::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 768px) {
+            article,
+            aside {
+                width: 100%;
+            }
+            aside img {
+                display: block;
+                width: 33.33%;
+                padding: 10px;
+                float: left;
+            }
+        }
+        footer {
+            background-color: #dddddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+        }
+        .card {
+            padding: 20px;
+            margin: 20px 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <p>브라우저 크기를 조절하여 효과를 학인해 주세요.</p>
+    </header>
+
+    <nav>
+        <a href = "#">Link</a>
+        <a href = "#">Link</a>
+        <a href = "#">Link</a>
+        <a href = "#" style = "float: right">Link</a>
+    </nav>
+
+    <section>
+        <article class = "pic">
+            <div class = "card">
+                <h2>우리 아이가 달라졌어요</h2>
+                <h5>등록일 : 2022.02.25</h5>
+                <img src = "./img/img_forest.jpg">
+                <p>장난스러운 아이</p>
+                <p>국교는 인정되지 아니하며, 종교와 정치는 분리된다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다. 중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하는 3인과 대법원장이 지명하는 3인의 위원으로 구성한다. 위원장은 위원중에서 호선한다.</p>
+            </div>
+            
+            <div class = "card">
+                <h2>놀면 뭐하니</h2>
+                <h5>등록일 : 2022.03.28</h5>
+                <img src = "./img/img_5terre.jpg">
+                <p>주주 클럽 탄생</p>
+                <p>국교는 인정되지 아니하며, 종교와 정치는 분리된다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다. 중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하는 3인과 대법원장이 지명하는 3인의 위원으로 구성한다. 위원장은 위원중에서 호선한다.</p>
+            </div>
+        </article>
+
+        <aside>
+            <div class = "card">
+                <h2>About me</h2>
+                <img src = "./img/scream.jpg">
+                <p>국교는 인정되지 아니하며, 종교와 정치는 분리된다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다.국회에서 선출하는 3인과 대법원장이 지명하는 3인의 위원으로 구성한다. 위원장은 위원중에서 호선한다.</p>
+            </div>
+
+            <div class = "card">
+                <h3>Popular Post</h3>
+                <div>
+                    <img src = "./img/pineapple.jpg">
+                </div>
+                <div>
+                    <img src = "./img/pineapple.jpg">
+                </div>
+                <div>
+                    <img src = "./img/pineapple.jpg">
+                </div>
+            </div>
+
+            <div class = "card">
+                <h3>Follow Me</h3>
+                <p>대략 이런 정도...</p>
+            </div>
+        </aside>
+    </section>
+
+    <section>
+        <aside>
+            <h2>Side</h2>
+            <p>국교는 인정되지 아니하며, 종교와 정치는 분리된다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다. 중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하는 3인과 대법원장이 지명하는 3인의 위원으로 구성한다. 위원장은 위원중에서 호선한다.</p>
+        </aside>
+        
+        <article>
+            <h2>Column</h2>
+            <p>국교는 인정되지 아니하며, 종교와 정치는 분리된다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다. 중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하는 3인과 대법원장이 지명하는 3인의 위원으로 구성한다. 위원장은 위원중에서 호선한다.</p>
+            <p>사회적 특수계급의 제도는 인정되지 아니하며, 어떠한 형태로도 이를 창설할 수 없다. 공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 모든 국민은 인간으로서의 존엄과 가치를 가지며, 행복을 추구할 권리를 가진다. 국가는 개인이 가지는 불가침의 기본적 인권을 확인하고 이를 보장할 의무를 진다.</p>
+        </article>
+        
+        <aside>
+            <h2>Side</h2>
+            <p>국교는 인정되지 아니하며, 종교와 정치는 분리된다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다. 중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하는 3인과 대법원장이 지명하는 3인의 위원으로 구성한다. 위원장은 위원중에서 호선한다.</p>
+            <p>사회적 특수계급의 제도는 인정되지 아니하며, 어떠한 형태로도 이를 창설할 수 없다. 공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 모든 국민은 인간으로서의 존엄과 가치를 가지며, 행복을 추구할 권리를 가진다. 국가는 개인이 가지는 불가침의 기본적 인권을 확인하고 이를 보장할 의무를 진다.</p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>
